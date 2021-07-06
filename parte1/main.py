@@ -27,7 +27,7 @@ while True:
 
 #navegação pelas janelas
 
-    #enter
+#enter
     if windows == jprincipal and evento == 'Enter' and valor['Mesa'] == '1':
         jmesa1 = janelas_função.mesa1()
         jprincipal.hide()
@@ -39,7 +39,7 @@ while True:
         jprincipal.hide()
 
 
-    #voltar
+#voltar
     if windows == jmesa1 and evento == 'voltar':
         jmesa1.hide()
         jprincipal.un_hide()
@@ -52,7 +52,7 @@ while True:
 
 
 
-    #mexendo nos arquivos da mesa 1
+#mexendo nos arquivos da mesa 1
     if windows == jmesa1 and evento == 'confirmar' and valor['codigo'] == '1':
         arq_mesa['refri'] = valor['qnt']
         arq_mesa.to_excel(r'C:\Users\FELIPE\Desktop\documentos\Pai\mesas\nova\mesa 1.xlsx', index=False)
@@ -65,7 +65,7 @@ while True:
 
 
 
-    #mexendo nos arquivos da mesa 2
+#mexendo nos arquivos da mesa 2
     if windows == jmesa2 and evento == 'confirmar' and valor['codigo'] == '1':
         arq_mesa['refri'] = valor['qnt']
         arq_mesa.to_excel(r'C:\Users\FELIPE\Desktop\documentos\Pai\mesas\nova\mesa 2.xlsx', index=False)
@@ -76,9 +76,9 @@ while True:
         arq_mesa['comida'] = valor['qnt']
         arq_mesa.to_excel(r'C:\Users\FELIPE\Desktop\documentos\Pai\mesas\nova\mesa 2.xlsx', index=False)
 
-
+ 
     
-    #mexendo nos arquivos da mesa 3
+#mexendo nos arquivos da mesa 3
     if windows == jmesa3 and evento == 'confirmar' and valor['codigo'] == '1':
         arq_mesa['refri'] = valor['qnt']
         arq_mesa.to_excel(r'C:\Users\FELIPE\Desktop\documentos\Pai\mesas\nova\mesa 3.xlsx', index=False)
